@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="fixed-header">
+        <div class="container">
+
+<div class="bbbss">
+            <!-- Бургер меню -->
+            <label class="switch">
+                <input type="checkbox" id="burger-button" />
+                <span class="wrapper">
+                    <span class="row">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </span>
+                    <span class="row row-bottom">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </span>
+                    <span class="row-vertical">
+                        <span class="dot"></span>
+                        <span class="dot middle-dot"></span>
+                        <span class="dot"></span>
+                    </span>
+                    <span class="row-horizontal">
+                        <span class="dot"></span>
+                        <span class="dot middle-dot-horizontal"></span>
+                        <span class="dot"></span>
+                    </span>
+                </span>
+            </label>
+        </div>
+
+        </div>
+
+
+
+        <div class="language-selector">
+            <img src="img/ru.png" alt="Язык" class="flag-icon" id="current-flag" onclick="toggleMenu()">
+
+            <div id="flag-menu" class="flag-menu">
+                <img src="img/ru.png" alt="Русский" onclick="changeLanguage('ru'); changeFlag('ru')" class="flag-icon">
+                <img src="img/kk.png" alt="Қазақша" onclick="changeLanguage('kk'); changeFlag('kk')" class="flag-icon">
+                <img src="img/us.png" alt="English" onclick="changeLanguage('en'); changeFlag('en')" class="flag-icon">
+            </div>
+            <script src="language.js"></script>
+        </div>
+
+        <div class="social">
+            <a href="https://www.instagram.com/vtk_kokshetau_forever/"><img src="img/instagram.png" alt="instagram"
+                    class="instagram"></a>
+            <a href=" https://www.facebook.com/vk.kokshe/?locale=ru_RU
+        "><img src="img/facebook.png" alt="facebook" class="facebook"></a>
+        </div>
+
+        <div class="location">
+            <p class="location-vtk" id="location-vtk">г. Кокшетау, <br> ул. Жумабека Ташенова, 115</p>
+            <div class="overlay hidden">
+                <ul class="address-menu">
+                    <a href="https://go.2gis.com/vLXNK">
+                        <li class="one-location" id="one-location">
+                            <img src="img/locate.png" alt="Location Icon" class="icon">
+                            Корпус №1: Тараса Шевченко, 127
+                        </li>
+                    </a>
+                    <a href="https://go.2gis.com/w9MVQ">
+                        <li class="two-location" id="two-location">
+                            <img src="img/locate.png" alt="Location Icon" class="icon">
+                            Корпус №2: Жамбыла Жабаева, 175
+                        </li>
+                    </a>
+                    <a href="https://go.2gis.com/D2BCu">
+                        <li class="three-location" id="three-location">
+                            <img src="img/locate.png" alt="Location Icon" class="icon">
+                            Корпус №3: Жамбыла Жабаева, 144
+                        </li>
+                    </a>
+                    <a href="https://go.2gis.com/yOq6K">
+                        <li class="four-location" id="four-location">
+                            <img src="img/locate.png" alt="Location Icon" class="icon">
+                            Корпус №4: Жумабека Ташенова, 115
+                        </li>
+                    </a>
+                </ul>
+            </div>
+            <script src="location.js"></script>
+        </div>
+
+        <div class="number">
+            <a href="@"><img src="img/call.png">
+                <p class="number-kz">+7 705 388 01 23</p>
+            </a>
+        </div>
+
+        <div class="icon-location">
+            <img src="img/home-2.png">
+        </div>
+
+
+    </header>
+
+    <nav class="nav-menu" id="nav-menu">
+        <ul>
+            <li class="menu-item">
+                <a href="#">О Колледже <img class="arrow" src="img/Style=bold.png" alt="arrow"></a>
+                <ul class="submenu">
+                    <li><a href="#">История</a></li>
+                    <li><a href="#">Миссия и цели</a></li>
+                    <li><a href="#">3D навигация</a></li>
+                    <li><a href="#">Специальности</a></li>
+                </ul>
+            </li>\
+            <li class="menu-item"><a href="#">Новости и события <img class="arrow" src="img/Style=bold.png" alt="arrow"></a></li>
+
+            <li class="menu-item">
+                <a href="#">Студенту <img class="arrow" src="img/Style=bold.png" alt="arrow"></a>
+                <ul class="submenu">
+                    <li><a href="#">Расписание занятий</a></li>
+                    <li><a href="#">Электронный дневник</a></li>
+                    <li><a href="#">Секции</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="#">Абитуриенту <img class="arrow" src="img/Style=bold.png" alt="arrow"></a>
+                <ul class="submenu">
+                    <li><a href="#">Специальности</a></li>
+                    <li><a href="#">Как поступить</a></li>
+                    <li><a href="#">Документы</a></li>
+                    <li><a href="#">Вопросы и ответы (FAQ)</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="#">Родителям<img class="arrow" src="img/Style=bold.png" alt="arrow"></a>
+                <ul class="submenu">
+                    <li><a href="#">Успеваемость студентов</a></li>
+                    <li><a href="#">Дисциплина и безопасность</a></li>
+                    <li><a href="#">Вопросы и ответы (FAQ)</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <script src="menu.js"></script>
+
+
+
+
+
+
+
+    <div class="main-page">
+        <div class="logotype">
+            <img class="logo" src="img/logo 1.png" id="logo">
+            <div class="lines-container" id="lines-container"></div>
+        </div>
+
+        <div class="vtk-name" id="vtkName">
+            <p class="vtk" id="vtk">⠀⠀⠀⠀⠀Высший <br> Технический Колледж <br> <span>⠀Обучаем лучших специалистов</span>
+            </p>
+            <a href="@"><button class="qqq" id="qqq">ПОСТУПИТЬ</button></a>
+            <a href="#more"><button class="www" id="www">УЗНАТЬ БОЛЬШЕ</button></a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <main class="main" id="more">
+        <section class="carousel">
+            <div class="carousel-wrapper">
+
+                <div class="carousel-item active">
+                    <img src="img/1.jpg" alt="Фото 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/2.jpg" alt="Фото 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/3.jpg" alt="Фото 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/4.jpg" alt="Фото 4">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/5.jpg" alt="Фото 4">
+                </div>
+            </div>
+            <button class="carousel-control prev">❮</button>
+            <button class="carousel-control next">❯</button>
+            <div class="carousel-indicators"></div>
+        </section>
+        <script src="carusel.js"></script>
+    </main>
+
+
+
+
+
+
+
+    <div class="info-all">
+        <div class="abiturient" id="abiturient" onclick="expandBox('abiturient')">
+            <p class="name-abit" id="name-abit">Абитуриентам</p>
+            <button class="close-btn" onclick="closeBox('abiturient')">×</button>
+        </div>
+
+        <div class="student" id="student" onclick="expandBox('student')">
+            <p class="name-stud" id="name-stud">Студентам</p>
+            <button class="close-btn" onclick="closeBox('student')">×</button>
+        </div>
+
+        <div class="parrents" id="parrents" onclick="expandBox('parrents')">
+            <p class="name-par" id="name-par">Родителям</p>
+            <button class="close-btn" onclick="closeBox('parrents')">×</button>
+        </div>
+        <script src="a.js"></script>
+
+
+
+
+
+        <div class="news-gallery">
+
+
+
+            <div class="news-carousel-container">
+                <div class="news-carousel">
+                    <div class="news-slide">
+                        <img src="img/1.jpg" alt="Новость 1">
+                        <h3>Заголовок новости 1</h3>
+                        <p>Краткое описание новости 1.</p>
+                    </div>
+                    <div class="news-slide">
+                        <img src="img/2.jpg" alt="Новость 2">
+                        <h3>Заголовок новости 2</h3>
+                        <p>Краткое описание новости 2.</p>
+                    </div>
+                    <div class="news-slide">
+                        <img src="img/3.jpg" alt="Новость 3">
+                        <h3>Заголовок новости 3</h3>
+                        <p>Краткое описание новости 3.</p>
+                    </div>
+                </div>
+                <button class="news-btn news-prev" onclick="prevNewsSlide()">&#10094;</button>
+                <button class="news-btn news-next" onclick="nextNewsSlide()">&#10095;</button>
+            </div>
+
+            <script src="ultra-slider.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="image-slider">
+                <div class="image-magic">
+                    <img src="img/1.jpg" alt="Image 1">
+                    <img src="img/2.jpg" alt="Image 2">
+                    <img src="img/3.jpg" alt="Image 3">
+                    <img src="img/4.jpg" alt="Image 4">
+                    <img src="img/2.jpg" alt="Image 5">
+                </div>
+                <div class="button-container">
+                    <button class="control-button prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <button class="control-button next" onclick="moveSlide(1)">&#10095;</button>
+                </div>
+            </div>
+
+            <script src="two-slide.js"></script>
+
+
+
+            <div class="student-3000">
+                <p class="student-bt" id="student-bt"> 2500 <br> студентов</p>
+            </div>
+
+
+            <div class="four-info__block">
+
+
+
+                <div class="card-one" id="card-one">
+                    <h2>57+</h2>
+                    <p>квалификаций</p>
+                </div>
+
+                <div class="card-two" id="card-two">
+                    <h2>100+</h2>
+                    <p>преподователей</p>
+                </div>
+
+                <div class="card-three" id="card-three">
+                    <h2>5</h2>
+                    <p>корпусов</p>
+                </div>
+
+                <div class="card-four" id="card-four">
+                    <h2>5+</h2>
+                    <p>спортивные секции</p>
+                </div>
+
+
+
+                <button class="xz-btn">Кнопка</button>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="custom-carousel-container">
+                <button class="custom-arrow custom-left" id="customPrev">❮</button>
+                <div class="custom-carousel" id="customCarousel">
+                    <div class="custom-card">
+                        <div class="flip-container">
+                            <div class="front" id="front-one">Профессиональное обучение (по отраслям)</div>
+                            <div class="back">
+                                <p id="sub__front1-one">Мастер производственного обучения, техник (всех наименований)
+                                </p>
+                                <p id="sub__front2-one">Мастер производственного обучения, техник-технолог (всех
+                                    наименований)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="custom-card">
+                        <div class="flip-container">
+                            <div class="front" id="front-two">Дизайн интерьера</div>
+                            <div class="back">
+                                <p id="sub__front1-two">Дизайнер интерьера</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="custom-card">
+                        <div class="flip-container">
+                            <div class="front" id="front-three">Учет и аудит</div>
+                            <div class="back" id="black-two">
+                                <p>Бухгалтер</p>
+                                <p>Бухгалтер-кассир</p>
+                                <p>Менеджер по государственным закупкам</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="custom-card">
+                        <div class="flip-container">
+                            <div class="front" id="front-four">Вычислительная техника и информационные сети (по видам)
+                            </div>
+                            <div class="back" id="black-four">
+                                <p>Оператор компьютерного аппаратного обеспечения</p>
+                                <p>Техник сетевого и системного администрирования</p>
+                                <p>Прикладной бакалавр вычислительной техники и информационных сетей</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="custom-card">
+                        <div class="flip-container">
+                            <div class="front" id="front-five">Программное обеспечение (по видам)</div>
+                            <div class="back" id="black-five">
+                                <p>Web-дизайнер</p>
+                                <p>Разработчик программного обеспечения</p>
+                                <p>Техник по сопровождению и тестированию программного обеспечения</p>
+                                <p>Техник информационных систем</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="custom-card">
+                        <div class="flip-container">
+                            <div class="front" id="front-six">Электрооборудование (по видам и отраслям)</div>
+                            <div class="back" id="black-six">
+                                <p>Техник-электрик</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="custom-card">
+                        <div class="flip-container">
+                            <div class="front" id="front-seven">Теплотехническое оборудование и системы теплоснабжения
+                                (по видам)</div>
+                            <div class="back" id="black-seven">
+                                <p>Техник-теплотехник</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="custom-card">
+                        <div class="flip-container">
+                            <div class="front" id="front-eight">Техническое обслуживание, ремонт и эксплуатация
+                                электромеханического оборудования</div>
+                            <div class="back" id="black-eight">
+                                <p>Монтажник электрооборудования</p>
+                                <p>Техник-электромеханик</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="custom-card">
+                        <div class="flip-container">
+                            <div class="front" id="front-nine">Автоматизация и управление технологическими процессами
+                            </div>
+                            <div class="back" id="black-nine">
+                                <p>Слесарь по обслуживанию и ремонту контрольно-измерительных приборов и автоматики</p>
+                                <p>Техник-электромеханик</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="custom-card">
+                        <div class="flip-container">
+                            <div class="front" id="front-ten">Мехатроника (по отраслям)</div>
+                            <div class="back" id="black-ten">
+                                <p>Техник-мехатроник</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="custom-card">
+                        <div class="flip-container">
+                            <div class="front" id="front-eleven">Технология машиностроения (по видам)</div>
+                            <div class="back" id="black-eleven">
+                                <p>Оператор станков с программным управлением</p>
+                                <p>Техник-технолог</p>
+                                <p>Прикладной бакалавр технологии машиностроения</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="custom-card">
+                        <div class="flip-container">
+                            <div class="front" id="front-twelve">Сварочное дело (по видам)</div>
+                            <div class="back" id="black-twelve">
+                                <p>Электрогазосварщик</p>
+                                <p>Техник-механик</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="custom-card">
+                        <div class="flip-container">
+                            <div class="front" id="front-thirteen">Эксплуатация и техническое обслуживание машин и
+                                оборудования (по отраслям промышленности)</div>
+                            <div class="back" id="black-thirteen">
+                                <p>Наладчик оборудования</p>
+                                <p>Техник-механик</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="custom-card">
+                        <div class="flip-container">
+                            <div class="front" id="front-fourteen">Техническое обслуживание, ремонт и эксплуатация
+                                автомобильного транспорта</div>
+                            <div class="back" id="black-fourteen">
+                                <p>Слесарь по ремонту автомобилей</p>
+                                <p>Электрик по ремонту автомобильного электрооборудования</p>
+                                <p>Мастер по ремонту автомобильного транспорта</p>
+                                <p>Техник-механик</p>
+                                <p>Прикладной бакалавр технического обслуживания, ремонта и эксплуатации автомобильного
+                                    транспорта</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="custom-card">
+                        <div class="flip-container">
+                            <div class="front" id="front-fifteen">Механизация сельского хозяйства</div>
+                            <div class="back" id="black-fifteen">
+                                <p>Слесарь-ремонтник</p>
+                                <p>Тракторист-машинист сельскохозяйственного производства</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="custom-card">
+                        <div class="flip-container">
+                            <div class="front" id="front-sixteen">Мебельное производство</div>
+                            <div class="back" id="black-sixteen">
+                                <p>Техник-технолог</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="custom-card">
+                        <div class="flip-container">
+                            <div class="front" id="front-seventeen">Швейное производство и моделирование одежды</div>
+                            <div class="back" id="black-seventeen">
+                                <p>Швея</p>
+                                <p>Портной</p>
+                                <p>Модельер-конструктор</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="custom-card">
+                        <div class="flip-container">
+                            <div class="front" id="front-eighteen">Обогащение полезных ископаемых (рудообогащение)</div>
+                            <div class="back" id="black-eighteen">
+                                <p>Техник-технолог</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="custom-card">
+                        <div class="flip-container">
+                            <div class="front" id="front-nineteen">Архитектура</div>
+                            <div class="back" id="black-nineteen">
+                                <p>Исполнитель графических работ</p>
+                                <p>Техник-проектировщик</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="custom-card">
+                        <div class="flip-container">
+                            <div class="front" id="front-twenty">Геодезия и картография</div>
+                            <div class="back" id="black-twenty">
+                                <p>Техник-геодезист</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="custom-card">
+                        <div class="flip-container">
+                            <div class="front" id="front-twenty-one">Строительство и эксплуатация зданий и сооружений
+                            </div>
+                            <div class="back" id="black-twenty-one">
+                                <p>Мастер столярно-плотничных и паркетных работ</p>
+                                <p>Мастер-строитель широкого профиля</p>
+                                <p>Мастер отделочных строительных работ</p>
+                                <p>Техник-строитель</p>
+                                <p>Прикладной бакалавр строительства и эксплуатации зданий и сооружений</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="custom-card">
+                        <div class="flip-container">
+                            <div class="front" id="front-twenty-two">Сметное дело в строительстве</div>
+                            <div class="back" id="black-twenty-two">
+                                <p>Техник-сметчик</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="custom-card">
+                        <div class="flip-container">
+                            <div class="front" id="front-twenty-three">Строительство и эксплуатация автомобильных дорог
+                                и аэродромов</div>
+                            <div class="back" id="black-twenty-three">
+                                <p>Техник-строитель</p>
+                                <p>Прикладной бакалавр строительства автомобильных дорог и аэродромов</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="custom-card">
+                        <div class="flip-container">
+                            <div class="front" id="front-twenty-four">Монтаж и эксплуатация инженерных систем объектов
+                                жилищно-коммунального хозяйства</div>
+                            <div class="back" id="black-twenty-four">
+                                <p>Слесарь-сантехник</p>
+                                <p>Мастер по обслуживанию инженерных систем объектов жилищно-коммунального хозяйства</p>
+                                <p>Техник по монтажу и эксплуатации инженерных систем</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="custom-card">
+                        <div class="flip-container">
+                            <div class="front" id="front-twenty-five">Организация тепличного хозяйства</div>
+                            <div class="back" id="black-twenty-five">
+                                <p>Мастер тепличных производств</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="custom-card">
+                        <div class="flip-container">
+                            <div class="front" id="front-twenty-six">Парикмахерское искусство</div>
+                            <div class="back" id="black-twenty-six">
+                                <p>Парикмахер-стилист</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="custom-card">
+                        <div class="flip-container">
+                            <div class="front" id="front-twenty-seven">Организация питания</div>
+                            <div class="back" id="black-twenty-seven">
+                                <p>Кондитер-оформитель</p>
+                                <p>Повар</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                </div>
+                <button class="custom-arrow custom-right" id="customNext">❯</button>
+            </div>
+
+            <script src="prof.js"></script>
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
